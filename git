@@ -1,0 +1,8 @@
+git clone https://github.com/erxTesting/randowm.git # clone this repo
+git branch -a # list all branches
+git checkout <branchname> # change to branch
+git branch # sho current branch
+git status
+git add -A # add all untracked files
+git commit -m "Commit me" -a # commit and add a message and all tracked files
+git push
