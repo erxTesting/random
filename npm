@@ -1,0 +1,6 @@
+npm -v
+nvm use 6.7.0
+npm install -g bower
+npm update -g newman
+nvm install latest
+npm start

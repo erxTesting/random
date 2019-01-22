@@ -1,5 +1,27 @@
+# README for a newly created project. (from older c9 project)
+
+There are a couple of things you should do first, before you can use all of Git's power:
+
+  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
+    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
+  * Create new files inside your project
+  * Add them to to Git by executing the following command
+    `git add [file1, file2, file3, ...]` [Enter]
+  * Create a commit which can be pushed to the remote you just added
+    `git commit -m 'added new files'` [Enter]
+  * Push the commit the remote
+    `git push [remote name] master` [Enter]
+
+That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
+If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
+
+Happy coding!
+
 git clone https://github.com/erxTesting/randowm.git # clone this repo
 git clone https://github.com/rw251/git-summary.git # tools
+git config --get remote.origin.url # only the remote URL
+git remote show origin # full referential integrity output
+git remote -v # list all remotes (collaborators)
 ./git-summary/git-summary
 git branch -a # list all branches
 git checkout <branchname> # change to branch
@@ -8,3 +30,22 @@ git status
 git add -A # add all untracked files
 git commit -m "Commit me" -a # commit and add a message and all tracked files
 git push
+
+git config --global core.autocrlf true
+git config core.filemode false
+git status
+git diff
+git pull
+git pull --rebase
+git stash # Discard all local changes, but save them for possible re-use later
+git reset --hard # Discard all local changes to all files permanently
+git commit -a & rem :wq
+git commit -a -m 'made a change'
+git push
+git push origin 
+git clone ^
+git checkout ^
+git remote set-url ^
+git branch
+git branch new_branch
+git checkout new_branch
