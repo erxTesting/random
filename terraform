@@ -1,3 +1,14 @@
+# install
+
+uname -a # is 32 or 64 bit os?
+
+wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip # linux 64
+unzip terraform_0.11.11_linux_amd64.zip -d /usr/local/bin/
+
+wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_windows_amd64.zip # windows 64 (cygwin)
+unzip terraform_0.11.11_windows_amd64.zip -d /usr/local/bin/
+terraform --version
+
 terraform plan
 terraform apply; and export TERRAFORM_JMETER=(terraform show | grep -m 1 private_ip | cut -d= -f2 | sed -e 's/^[ \t]*//') ;and echo "TERRAFORM IP is $TERRAFORM_JMETER" # export the IP above to a variable
 terraform destroy

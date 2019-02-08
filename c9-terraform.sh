@@ -11,8 +11,8 @@ read -p "Press [Enter]..."
 # rm get-pip.py                                 # Delete the install script.
 
 uname -a # is 32 or 64 bit os?
-wget https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip
-unzip terraform_0.11.5_linux_amd64.zip -d /usr/local/bin/
+wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip # linux 64
+unzip terraform_0.11.11_linux_amd64.zip -d /usr/local/bin/
 terraform --version
 
 sudo vi /home/ubuntu/.aws/keys/Integrations.pem
