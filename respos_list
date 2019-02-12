@@ -1,0 +1,14 @@
+git://github.com/
+    pjreddie/darknet            # Convolutional Neural Networks http://pjreddie.com/darknet/
+    ajaxorg/ace
+    dequelabs/axe-core
+    adtac/climate               # The swiss-army knife of utility tools for Linux
+    rw251/git-summary           # Summarizes multiple git repository status within a directory
+    Blazemeter/blazemeter-demo  # Simple App to Test BlazeMeter Jenkins Integration
+    Gnate/libfprint             # Library for fingerprint readers
+    fengoffice/fengoffice       # Feng Office is a Collaboration Platform and Project Management System
+    erxTesting/
+        rottendata
+        terraform
+        bzt-jm
+        randowm

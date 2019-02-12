@@ -23,8 +23,10 @@ git config --global core.autocrlf true # converts LF endings into CRLF when you 
 git config --global core.autocrlf input # convert CRLF to LF on commit
 git config core.filemode false # per repo, ignore chmod or other mode changes
 git config --get remote.origin.url # only the remote URL
+git init # Create a new local repository
 git clone https://github.com/erxTesting/randowm.git # clone this repo
-git clone https://github.com/rw251/git-summary.git # tools
+git clone https://github.com/adtac/climate.git # The swiss-army knife of utility tools for Linux
+git clone https://github.com/rw251/git-summary.git # Summarizes multiple git repository status within a directory
 ./git-summary/git-summary
 git remote show origin # full referential integrity output
 git remote -v # list all remotes (collaborators)
@@ -32,6 +34,7 @@ git remote set-url ^
 git branch -a # list all branches
 git branch # sho current branch
 git branch <new_branch>
+git checkout -b <branchname> # create a new branch and switch to it
 git checkout <branch_name> # change to branch
 git status
 git diff
@@ -40,7 +43,7 @@ git reset --hard # Discard all local changes to all files permanently
 git add -A # add all untracked files
 git commit -a & rem :wq 
 git commit -a -m 'made a change' # commit and add a message and all tracked files
-git pull
+git pull # fetch and merge changes on the remote server to your working directory
 git pull --rebase
 git push
 git push origin 
