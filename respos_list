@@ -1,7 +1,8 @@
 git://github.com/
     pjreddie/darknet            # Convolutional Neural Networks http://pjreddie.com/darknet/
-    ajaxorg/ace
-    dequelabs/axe-core
+    ajaxorg/ace                 # Ace (Ajax.org Cloud9 Editor) https://ace.c9.io
+    dequelabs/axe-core          # Accessibility engine for automated Web UI testing https://www.deque.com/axe/
+    deviantony/docker-elk       # The ELK stack powered by Docker and Compose
     adtac/climate               # The swiss-army knife of utility tools for Linux
     rw251/git-summary           # Summarizes multiple git repository status within a directory
     Blazemeter/blazemeter-demo  # Simple App to Test BlazeMeter Jenkins Integration
@@ -11,4 +12,4 @@ git://github.com/
         rottendata
         terraform
         bzt-jm
-        randowm
+        randowm                 # clone this repo
