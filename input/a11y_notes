@@ -1,0 +1,68 @@
+	A11y/aXe demo
+		Docs
+		    terminology
+		        Accessibility => a11y => inclusive + universal
+		Steps
+			Feedback loop
+			Prod users
+			CI
+			func auto
+			unit test
+			https://www.npmjs.com/package/axe-core
+			https://www.npmjs.com/package/axe-reports
+			https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US
+		Share
+
+curl -XPOST 'http://jfblouvmlxecs01:9200/test/test/1' -d @lane.json
+
+axe --stdout www.deque.com \
+| curl -XPOST 'http://elasticsearch.ss..com:9200' -d 
+
+es.host	elasticsearch.ss..com
+es.port	9200
+
+cat data.json | curl -H "Content-Type: application/json" -X POST -d @- http://api
+
+https://stackoverflow.com/questions/44307771/curl-command-a-gzipped-post-body-to-an-apache-server
+echo '{ "mydummy" : "json" }' | gzip > body.gz
+curl -v -i http://localhost/mymodule -H'Content-Encoding: gzip' --data-binary @body.gz
+
+https://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html
+ cat file.json | jq -c '.[] | {"index": {"_index": "a11y.json.pv", "_type": "a11yResult", "_id": .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
+ cat axe-results-1550176765418.json | jq -c '.[] | {"index": {"_index": "a11y.json.pv", "_type": "a11yResult", "_id": .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
+http://blog.prettyvulgar.com/
+ echo http://blog.prettyvulgar.com/ | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]' #| base64 --wrap=0
+ httpblogprettyvulgarcom
+ cat /cygdrive/c/Users/eberg/workspace/data/pv/axe-results-1551111807978.json \
+ | jq -c '.[] | {"index": {"_index": "a11y.axe.json.pv", "_type": "a11yResult", "_id": "http://blog.prettyvulgar.com/"}}, .' \
+ | curl -XPOST localhost:9200/_bulk --data-binary @-
+ 
+ <~/workspace/input/pv_pages xargs -n1 -I % axe % --save
+ <~/workspace/input/pv_pages xargs -n1 -I % | base64 --wrap=0
+ cat ~/workspace/input/pv_pages | tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]' | base64 --wrap=0
+ 
+ echo 'http://blog.prettyvulgar.com/beauty-secrets/5-vintage-makeup-trends-that-all-deserve-to-live-forever/' | base64 
+
+mRemoteNG
+	External Tools
+		git
+			./git-summary/git-summary
+			status
+			branch # show current branch
+				-a # list all branches
+				<new_branch>
+			checkout <branch_name> # change to branch
+			add -A # add all untracked files
+			commit -a -m '$promptMeFor' # commit and add a message and all tracked files
+			push
+				origin 
+			pull
+				--rebase
+			config
+				--global core.autocrlf
+					true # converts LF endings into CRLF when you check out code
+					input # convert CRLF to LF on commit
+				core.filemode false # ignore chmod or other mode changes
+			diff
+			stash # Discard all local changes, but save them for possible re-use later
+			reset --hard # Discard all local changes to all files permanently

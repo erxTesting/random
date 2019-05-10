@@ -1,0 +1,143 @@
+[
+  {
+    "timestamp": "2019-02-25T16:23:27.839Z",
+    "url": "http://blog.prettyvulgar.com/",
+    "violations": [
+      {
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/heading-order?application=webdriverjs",
+        "id": "heading-order",
+        "impact": "moderate",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": 5,
+                "id": "heading-order",
+                "impact": "moderate",
+                "message": "Heading order invalid",
+                "relatedNodes": []
+              }
+            ],
+            "failureSummary": "Fix any of the following:\n  Heading order invalid",
+            "html": "<h5 class=\"eltd-widget-title\">About Us</h5>",
+            "impact": "moderate",
+            "none": [],
+            "target": [
+              "#eltd_about_me-2 > h5"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    ],
+    "inapplicable": [
+      {
+        "description": "Ensures every accesskey attribute value is unique",
+        "help": "accesskey attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/accesskeys?application=webdriverjs",
+        "id": "accesskeys",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "best-practice",
+          "cat.keyboard"
+        ]
+      },
+      {
+        "description": "Ensures <area> elements of image maps have alternate text",
+        "help": "Active <area> elements must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/area-alt?application=webdriverjs",
+        "id": "area-alt",
+        "impact": null,
+        "nodes": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=webdriverjs",
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": {
+                  "contrastRatio": 0,
+                  "expectedContrastRatio": "4.5:1",
+                  "fgColor": "#a3a3a3",
+                  "fontSize": "9.0pt",
+                  "fontWeight": "normal"
+                },
+                "id": "color-contrast",
+                "impact": "serious",
+                "message": "Unable to determine contrast ratio",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<input type=\"text\" value=\"\" placeholder=\"Search\" name=\"s\">",
+            "impact": "serious",
+            "none": [],
+            "target": [
+              "input"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      }
+    ],
+    "passes": [
+      {
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-hidden-body?application=webdriverjs",
+        "id": "aria-hidden-body",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-hidden-body",
+                "impact": "critical",
+                "message": "No aria-hidden attribute is present on document body",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<body class=\"home page-template page-template-blog-standard page-template-blog-standard-php page page-id-883 eltd-core-1.1.1 allure child-child-ver-1.0.0 allure-ver-1.3 eltd-smooth-scroll eltd-smooth-page-transitions eltd-blog-installed eltd-header-type2 eltd-fixed-on-scroll eltd-default-mobile-header eltd-sticky-up-mobile-header eltd-menu-item-first-level-bg-color eltd- logo-vertical-align-middle eltd-side-menu-slide-from-right wpb-js-composer js-comp-ver-5.4.7 vc_responsive\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "body"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      }
+    ]
+  }
+]

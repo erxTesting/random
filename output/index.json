@@ -1,0 +1,509 @@
+{
+	"state": "open",
+	"settings": {
+		"index": {
+			"creation_date": "1551119611692",
+			"number_of_shards": "5",
+			"number_of_replicas": "1",
+			"uuid": "HvwWJxcpRd2G4sMCE8l3Yg",
+			"version": {
+				"created": "6040099"
+			},
+			"provided_name": "a11y.axe.json.pv"
+		}
+	},
+	"mappings": {
+		"a11yResult": {
+			"properties": {
+				"incomplete": {
+					"properties": {
+						"help": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"nodes": {
+							"properties": {
+								"impact": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"html": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"any": {
+									"properties": {
+										"data": {
+											"properties": {
+												"contrastRatio": {
+													"type": "long"
+												},
+												"fgColor": {
+													"type": "text",
+													"fields": {
+														"keyword": {
+															"ignore_above": 256,
+															"type": "keyword"
+														}
+													}
+												},
+												"expectedContrastRatio": {
+													"type": "text",
+													"fields": {
+														"keyword": {
+															"ignore_above": 256,
+															"type": "keyword"
+														}
+													}
+												},
+												"fontSize": {
+													"type": "text",
+													"fields": {
+														"keyword": {
+															"ignore_above": 256,
+															"type": "keyword"
+														}
+													}
+												},
+												"fontWeight": {
+													"type": "text",
+													"fields": {
+														"keyword": {
+															"ignore_above": 256,
+															"type": "keyword"
+														}
+													}
+												}
+											}
+										},
+										"impact": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"id": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"message": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										}
+									}
+								},
+								"target": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								}
+							}
+						},
+						"impact": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"description": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"helpUrl": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"id": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"tags": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						}
+					}
+				},
+				"passes": {
+					"properties": {
+						"help": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"nodes": {
+							"properties": {
+								"html": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"any": {
+									"properties": {
+										"impact": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"id": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"message": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										}
+									}
+								},
+								"target": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								}
+							}
+						},
+						"description": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"helpUrl": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"id": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"tags": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						}
+					}
+				},
+				"violations": {
+					"properties": {
+						"help": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"nodes": {
+							"properties": {
+								"failureSummary": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"impact": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"html": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								},
+								"any": {
+									"properties": {
+										"data": {
+											"type": "long"
+										},
+										"impact": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"id": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										},
+										"message": {
+											"type": "text",
+											"fields": {
+												"keyword": {
+													"ignore_above": 256,
+													"type": "keyword"
+												}
+											}
+										}
+									}
+								},
+								"target": {
+									"type": "text",
+									"fields": {
+										"keyword": {
+											"ignore_above": 256,
+											"type": "keyword"
+										}
+									}
+								}
+							}
+						},
+						"impact": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"description": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"helpUrl": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"id": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"tags": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						}
+					}
+				},
+				"inapplicable": {
+					"properties": {
+						"help": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"description": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"helpUrl": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"id": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						},
+						"tags": {
+							"type": "text",
+							"fields": {
+								"keyword": {
+									"ignore_above": 256,
+									"type": "keyword"
+								}
+							}
+						}
+					}
+				},
+				"url": {
+					"type": "text",
+					"fields": {
+						"keyword": {
+							"ignore_above": 256,
+							"type": "keyword"
+						}
+					}
+				},
+				"timestamp": {
+					"type": "date"
+				}
+			}
+		}
+	},
+	"aliases": [],
+	"primary_terms": {
+		"0": 1,
+		"1": 1,
+		"2": 1,
+		"3": 1,
+		"4": 1
+	},
+	"in_sync_allocations": {
+		"0": [
+			"KixgogiMTB-q5Eojb9jO7Q",
+			"suWxwGN4Ti6qN-mm9cowWw"
+		],
+		"1": [
+			"BRD96srqTP2j0GushzEoOA",
+			"6CbbR950SEezqOLGh2B2DQ"
+		],
+		"2": [
+			"qav2kUvTRIi9LoxE64ePLw",
+			"24ht-l68Q1WSJ-KLpcoEwg"
+		],
+		"3": [
+			"S5y4fpcWQU6vo1XpMYJ5Zw",
+			"3gzeDISySXepjKeUIDvUPw"
+		],
+		"4": [
+			"Yw9ipRBNQ925BiwyOjRt-A",
+			"DC-LEwiYTzGaz2mj9oI8Mw"
+		]
+	}
+}
