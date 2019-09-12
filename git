@@ -1,22 +1,3 @@
-# README for a newly created project. (from older c9 project)
-
-There are a couple of things you should do first, before you can use all of Git's power:
-
-  * Add a remote to this project: in the Cloud9 IDE command line, you can execute the following commands
-    `git remote add [remote name] [remote url (eg. 'git@github.com:/ajaxorg/node_chat')]` [Enter]
-  * Create new files inside your project
-  * Add them to to Git by executing the following command
-    `git add [file1, file2, file3, ...]` [Enter]
-  * Create a commit which can be pushed to the remote you just added
-    `git commit -m 'added new files'` [Enter]
-  * Push the commit the remote
-    `git push [remote name] master` [Enter]
-
-That's it! If this doesn't work for you, please visit the excellent resources from [Github.com](http://help.github.com) and the [Pro Git](http://http://progit.org/book/) book.
-If you can't find your answers there, feel free to ask us via Twitter (@cloud9ide), [mailing list](groups.google.com/group/cloud9-ide) or IRC (#cloud9ide on freenode).
-
-Happy coding!
-
 git config --global user.name "Sam Smith"
 git config --global user.email sam@example.com
 git config --global core.autocrlf true # converts LF endings into CRLF when you check out code
@@ -31,6 +12,7 @@ git clone https://github.com/rw251/git-summary.git # Summarizes multiple git rep
 git remote show origin # full referential integrity output
 git remote -v # list all remotes (collaborators)
 git remote set-url ^
+git remote add <remote name> <remote url (eg. 'git@github.com:/ajaxorg/node_chat')>
 git branch -a # list all branches
 git branch # sho current branch
 git branch <new_branch>
@@ -39,7 +21,7 @@ git checkout <branch_name> # change to branch
 git status
 git diff
 git log --graph
-git stash # Discard all local changes, but save them for possible re-use later
+git stash # list # Discard all local changes, but save them for possible re-use later
 git reset --hard # Discard all local changes to all files permanently
 git add -A # add all untracked files
 git commit -a & rem :wq 
