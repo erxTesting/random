@@ -1,4 +1,4 @@
-# v.2 Amazon Linux 
+# v.2 Amazon Linux c4.8xlarge
 python3 --version
 alias | grep python
 alias python=python3
