@@ -1,6 +1,7 @@
 git://github.com/
     pjreddie/darknet            # Convolutional Neural Networks http://pjreddie.com/darknet/
     ajaxorg/ace                 # Ace (Ajax.org Cloud9 Editor) https://ace.c9.io
+    ajaxorg/ace-builds          # Ace builds (Ajax.org Cloud9 Editor) https://ace.c9.io
     dequelabs/axe-core          # Accessibility engine for automated Web UI testing https://www.deque.com/axe/
     deviantony/docker-elk       # The ELK stack powered by Docker and Compose
     adtac/climate               # The swiss-army knife of utility tools for Linux
