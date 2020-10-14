@@ -1,3 +1,4 @@
+'SendKeys F15
 'Dim title = "MsgBox Demonstration"
 Dim WshShell
 Set WshShell = WScript.CreateObject("WScript.Shell")
